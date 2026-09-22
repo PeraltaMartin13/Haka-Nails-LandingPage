@@ -19,7 +19,6 @@ export default function Nav() {
                     <a href={BOOKING_URL}>Reservar Un Turno</a>
                     <a href="#Services">Servicios</a>
                     <a href={INSTAGRAM_URL}>Mi Instragram</a>
-                    <a href="#Ubicacion">Mi ubicacion</a>
                     <a href="#SobreMi">Un Poco Sobre mi</a>
                 </div>
             </div>

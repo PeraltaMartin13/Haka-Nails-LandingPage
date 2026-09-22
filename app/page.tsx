@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import Services from "./components/Services"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
+import SeparatorSaturno from "./components/SeparatorSaturno";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
         <Nav />
         <Hero />
         <Services />
+        <SeparatorSaturno />
         <Footer />
       </main>
     </div>

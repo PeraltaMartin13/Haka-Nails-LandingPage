@@ -7,17 +7,17 @@ import { Smartphone, Camera, Clapperboard, MapPin } from "lucide-react"
 export default function Footer() {
 
     return (
-        <section className=" flex flex-col w-full items-center justify-between px-30 bg-zinc-950">
-            <div className="flex w-full items-center justify-between px-30">
+        <section className=" flex flex-col w-full items-center justify-between px-6 bg-zinc-950">
+            <div className="flex w-full items-center justify-between">
                 <Image src="/media/logo-haka.png" alt="logo Haka" width={150} height={60}></Image>
-                <div className="flex items-center p-5  text-zinc-50 ">
+                <div className="flex flex-col md:flex-row md:items-center p-5  text-zinc-50 ">
                     <div className="flex flex-col py-5 px-10">
                         <h4 className="font-bold text-2xl">REDES SOCIALES</h4>
                         <div className="flex gap-2 items-center">
                             <Camera />
                             <a href={INSTAGRAM_URL}>INSTAGRAM</a>
                         </div>
-                        <div className="flex gap-2 items-center">
+                        <div className="flex py-2 gap-2 items-center">
                             <Clapperboard />
                             <a href={TIKTOK_URL}>TIKTOK</a>
                         </div>
@@ -28,7 +28,7 @@ export default function Footer() {
                             <Smartphone />
                             <p>1137727295</p>
                         </div>
-                        <div className="flex gap-2 items-center">
+                        <div className="flex py-2 gap-2 items-center">
                             <MapPin />
                             <p>Uspallata 2120, Hurlingham</p>
                         </div>
