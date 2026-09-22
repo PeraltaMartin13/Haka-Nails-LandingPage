@@ -3,7 +3,7 @@ import Services from "./components/Services"
 import Nav from "./components/Nav"
 import Footer from "./components/Footer"
 import SeparatorSaturno from "./components/SeparatorSaturno";
-
+import SobreProfesional from "./components/SobreProfesional";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -12,6 +12,7 @@ export default function Home() {
         <Hero />
         <Services />
         <SeparatorSaturno />
+        <SobreProfesional />
         <Footer />
       </main>
     </div>
