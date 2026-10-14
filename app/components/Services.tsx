@@ -12,7 +12,7 @@ const services = [
 
 export default function Services(){
     return(
-        <section id="Services" className="gap-8 py-14 px-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+        <section id="Services" className="gap-8 py-14 px-16 grid grid-cols-1 lg:grid-cols-3">
             {services.map((service) => (
                 <ServiceCard 
                 key={service.title}

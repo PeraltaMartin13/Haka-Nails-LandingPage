@@ -7,10 +7,10 @@ import { Smartphone, Camera, Clapperboard, MapPin } from "lucide-react"
 export default function Footer() {
 
     return (
-        <section className=" flex flex-col w-full items-center justify-between md:px-6 bg-zinc-950">
-            <div className="flex w-full items-center py-6 lg:justify-center md:justify-between">
+        <section className=" flex flex-col w-full items-center justify-between lg:px-6 bg-zinc-950">
+            <div className="flex w-full items-center py-6 lg:justify-center">
                 <Image src="/media/logo-haka.png" alt="logo Haka" width={150} height={60}></Image>
-                <div className="flex flex-col md:flex-row md:items-center p-5  text-zinc-50 ">
+                <div className="flex flex-col lg:flex-row lg:items-center p-5  text-zinc-50 ">
                     <div className="flex flex-col py-5 px-10">
                         <h4 className="font-bold text-2xl">REDES SOCIALES</h4>
                         <div className="flex gap-2 items-center">
@@ -33,7 +33,7 @@ export default function Footer() {
                             <p>Uspallata 2120, Hurlingham</p>
                         </div>
                     </div>
-                    <a href={BOOKING_URL} className="text-zinc-100 text-xl px-10  py-4 bg-violet-400 rounded-full ">RESERVÁ TU TURNO!</a>
+                    <a href={BOOKING_URL} className="text-zinc-100 text-xl px-10 text-center py-4 bg-violet-400 rounded-full ">RESERVÁ TU TURNO!</a>
                 </div>
             </div>
             <div>
