@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Footer from "./components/Footer"
 import SeparatorSaturno from "./components/SeparatorSaturno";
 import SobreProfesional from "./components/SobreProfesional";
+import Carrusel from "./components/Carrusel";
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -13,6 +14,7 @@ export default function Home() {
         <Services />
         <SeparatorSaturno />
         <SobreProfesional />
+        <Carrusel />
         <Footer />
       </main>
     </div>

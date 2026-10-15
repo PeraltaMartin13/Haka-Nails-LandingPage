@@ -1,7 +1,7 @@
 import ServiceCard from "./ServiceCard";
 
 const services = [
-    {title: "Caping Acrigel", description:"Refuerzo con poligel sobre largo natural + diseño a tu gusto.", image: "/media/capping-acrigel-1.jpeg" },
+    {title: "Caping Acrigel", description:"Refuerzo con poligel sobre largo natural + diseño a tu gusto.", image: "/media/capping-acrigel-2.jpeg" },
     {title: "Caping Acrilico", description:"Refuerzo con poligel sobre largo natural + diseño a tu gusto.", image: "/media/capping-acrilico-1.jpeg" },
     {title: "Esculpidas En Acrilico", description:"Alargá y dale tu forma favorita a tus uñas .", image: "/media/esculpidas-1.jpeg" },
     {title: "Esmaltado Semi permanente", description:"Esmaltado Semi Permanente sobre tu uña natural.", image: "/media/semi-permanente.jpeg" },
