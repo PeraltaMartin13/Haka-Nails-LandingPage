@@ -14,6 +14,7 @@ export default function Carrusel() {
     const [indiceAct, setIndiceActual] = useState(0);
     return (
         <section id="Carrusel" className="bg-black/90  py-5 w-full flex flex-col items-center  ">
+            <div className="text-6xl py-4 ">No sabes que hacerte? acá algunas ideas...</div>
             <div className="overflow-hidden w-5xl relative">
                 <div className="flex transition-transform duration-500" style={{ transform: `translateX(${+33.33 + (-indiceAct * 33.33)}%)` }}>
                     {carrusel.map((imagen, index) => (

@@ -13,9 +13,9 @@ export default function Services() {
     return (
         <section id="Services" className="bg-black/50 bg-opacity-25 rounded-4xl">
             <div>
-                <h1 className="text-center text-8xl">Los servicios que ofrezco son:</h1>
+                <h1 className="text-center text-8xl font-titulo">Los servicios que ofrezco son:</h1>
             </div>
-            <div className="gap-8 py-14 px-16 grid grid-cols-1 lg:grid-cols-3">
+            <div className="font-sans gap-8 py-14 px-16 grid grid-cols-1 lg:grid-cols-3">
                 {services.map((service) => (
                     <ServiceCard
                         key={service.title}
