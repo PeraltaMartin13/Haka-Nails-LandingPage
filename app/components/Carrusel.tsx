@@ -1,5 +1,6 @@
 "use client"
 
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image"
 
@@ -12,26 +13,31 @@ const carrusel = [{ image: "/media/carrusel/Carrusel1.jpg" }, { image: "/media/c
 export default function Carrusel() {
     const [indiceAct, setIndiceActual] = useState(0);
     return (
-        <section id="Carrusel" className="">
-            <Image className="border-4 rounded-4xl shadow-2xl w-175 h-175 object-cover "
-                src={carrusel[indiceAct].image}
-                alt="Diseño destacado"
-                width={500}
-                height={500}
-            />
-            <button onClick={() => setIndiceActual((indiceAct - 1 + carrusel.length) % carrusel.length)}>←</button>
-            <button onClick={() => setIndiceActual((indiceAct + 1)% carrusel.length)}>→</button>
-            {carrusel.map((imagen, index) => (
-                index === indiceAct ? null : (
-                <Image className={"opacity-25 rounded-4xl w-100 h-100 object-cover"}
-                    alt={`Diseño de Uñas #${index + 1}`}
-                    width={300}
-                    height={300}
-                    key={imagen.image}
-                    src={imagen.image}
-                />
-            )))}
-
+        <section id="Carrusel" className="bg-black/90  py-5 w-full flex flex-col items-center  ">
+            <div className="overflow-hidden w-5xl relative">
+                <div className="flex transition-transform duration-500" style={{ transform: `translateX(${+33.33 + (-indiceAct * 33.33)}%)` }}>
+                    {carrusel.map((imagen, index) => (
+                        <Image
+                            className={`shrink-0 rounded-4xl w-1/3 h-150 object-cover transition-all duration-500 ${index === indiceAct ? "scale-100 opacity-100" : "scale-75 opacity-50"}`}
+                            alt={`Diseño de Uñas #${index + 1}`}
+                            width={300}
+                            height={300}
+                            key={imagen.image}
+                            src={imagen.image}
+                        />
+                    ))}
+                </div>
+                <button onClick={() => setIndiceActual((indiceAct - 1 + carrusel.length) % carrusel.length)}
+                    aria-label="Foto anterior"
+                    className="text-white absolute left-4 top-1/2 -translate-y-1/2 p-3 hover:scale-110 transition">
+                    <ChevronLeft size={100} strokeWidth={2} />
+                </button>
+                <button onClick={() => setIndiceActual((indiceAct + 1) % carrusel.length)}
+                    aria-label="Foto Siguiente"
+                    className="text-white absolute right-4 top-1/2 -translate-y-1/2 p-3 hover:scale-110 transition">
+                    <ChevronRight size={100} strokeWidth={2} />
+                </button>
+            </div>
 
         </section>
     )
